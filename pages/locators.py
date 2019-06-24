@@ -9,8 +9,8 @@ class LoginPageLocators(object):
 
     LOGIN_EMAIL = (By.ID, 'id_login-username')
     LOGIN_PASSWORD = (By.ID, 'id_login-password')
-    LOGIN_ACCEPT_BUTTON = (By.NAME, 'login_sumit')
-    LOGIN_FORGOTTEN_PASS_LINK = (By.PARTIAL_LINK_TEXT, 'password-reset')
+    LOGIN_ACCEPT_BUTTON = (By.NAME, 'login_submit')
+    LOGIN_FORGOTTEN_PASS_LINK = (By.TAG_NAME, 'p')
 
     REGISTER_EMAIL = (By.ID, 'id_registration-email')
     REGISTER_PASSWORD = (By.ID, 'id_registration-password1')
