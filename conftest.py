@@ -7,6 +7,8 @@ def pytest_addoption(parser):
                          help="Choose browser")
     parser.addoption('--language', action='store', default='en',
                      help="Choose browser language")
+    parser.addoption('--timeout', action='store', default=10,
+                 help="Choose timeout time (seconds)")
 
 @pytest.fixture(scope="function")
 def browser(request):
