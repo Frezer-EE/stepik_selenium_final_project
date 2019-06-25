@@ -16,3 +16,11 @@ class LoginPageLocators(object):
     REGISTER_PASSWORD = (By.ID, 'id_registration-password1')
     REGISTER_REPEATED_PASSWORD = (By.ID, 'id_registration-password2')
     REGISTER_ACCEPT_BUTTON = (By.NAME, 'registration_submit')
+
+class ProductPageLocators(object):
+
+    ADD_TO_CART_BUTTON = (By.CLASS_NAME, 'btn-add-to-basket')
+    SUCCESS_ADDITION_ALERT = (By.CSS_SELECTOR, '.alert-success')
+    PRODUCT_NAME = (By.CSS_SELECTOR, '.product_main h1')
+    PRODUCT_PRICE = (By.CSS_SELECTOR, '.product_main .price_color')
+    ALERT_PRICE = (By.CSS_SELECTOR, '.alert-info strong')
