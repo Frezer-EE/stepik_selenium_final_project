@@ -32,6 +32,7 @@ class BasePageLocators(object):
     LOGIN_LINK = (By.CSS_SELECTOR, "#login_link")
     LOGIN_LINK_INVALID = (By.CSS_SELECTOR, "#login_link_inc")
     CART_LINK = (By.XPATH, '//a[text()="View basket"]')
+    USER_ICON = (By.CSS_SELECTOR, ".icon-user")
 
 class CartPageLocators(object):
 
