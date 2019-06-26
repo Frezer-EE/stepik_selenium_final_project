@@ -20,7 +20,10 @@ class ProductPage(BasePage):
         self.browser.find_element(*ProductPageLocators.ADD_TO_CART_BUTTON).click()
 
     def alert_success_addition_present(self):
-        assert self.is_element_present(*ProductPageLocators.SUCCESS_ADDITION_ALERT), 'no success addition alert presented'
+        success_addition_phrase_en_gb = 'has been added to your basket'
+        assert 'en-gb' == self.browser.find_element(*ProductPageLocators.LANG_EN_GB).get_attribute('lang'), 'current page language is not "en-gb"'
+        assert success_addition_phrase_en_gb in self.browser.find_elements(*ProductPageLocators.SUCCESS_ADDITION_ALERT)[0].text,\
+            'success addition alert not contain phrase "{}"'.format(success_addition_phrase_en_gb)
 
     def equal_product_name_and_added_product(self, product_name):
         assert product_name in self.browser.find_elements(*ProductPageLocators.SUCCESS_ADDITION_ALERT)[0].text, \

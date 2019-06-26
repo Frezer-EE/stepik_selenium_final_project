@@ -5,7 +5,7 @@ from selenium.webdriver.chrome.options import Options
 def pytest_addoption(parser):
     parser.addoption('--browser_name', action='store', default='chrome',
                          help="Choose browser")
-    parser.addoption('--language', action='store', default='en',
+    parser.addoption('--language', action='store', default='en-gb',
                      help="Choose browser language")
     parser.addoption('--timeout', action='store', default=10,
                  help="Choose timeout time (seconds)")
