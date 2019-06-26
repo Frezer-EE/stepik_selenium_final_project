@@ -22,6 +22,7 @@ class ProductPageLocators(object):
     ADD_TO_CART_BUTTON = (By.CLASS_NAME, 'btn-add-to-basket')
     LANG_EN_GB = (By.XPATH, '//html')
     SUCCESS_ADDITION_ALERT = (By.CSS_SELECTOR, '.alert-success')
+    PRODUCT_NAME_ADDITION_ALERT = (By.CSS_SELECTOR, '.alert-success strong')
     PRODUCT_NAME = (By.CSS_SELECTOR, '.product_main h1')
     PRODUCT_PRICE = (By.CSS_SELECTOR, '.product_main .price_color')
     ALERT_PRICE = (By.CSS_SELECTOR, '.alert-info strong')
