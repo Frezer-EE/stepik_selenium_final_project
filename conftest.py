@@ -14,7 +14,7 @@ def pytest_addoption(parser):
 def browser(request):
     """
     Инициализируем указанный браузер с указанным языком.
-    Defaults: browser_name=chrome, language=ru
+    Defaults: browser_name=chrome, language=en-gb, timeout=10
     """
     browser_name = request.config.getoption("browser_name")
     language = request.config.getoption('language')
